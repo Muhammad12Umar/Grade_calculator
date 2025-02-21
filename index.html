@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Language code </title>
+
+</head>
+
+<body>
+    <script>
+        // Now  to do coding in javascrapt Lanaguage ....
+        function GradeCalculator() {
+            let Name = prompt("Enter Your Name");
+            let fatherName = prompt("Enter Your fatherName");
+            let classe = prompt("Enter Your class");
+            let Rollno = +prompt("Enter Your Rollno");
+            let english = +prompt("Enter Your English Marks");
+            let Urdu = +prompt("Enter Your Urdu Marks");
+            let Maths = +prompt("Enter Your Maths Marks");
+            let Statistic = +prompt("Enter Your Statistic Marks");
+            let computerScience = +prompt("Enter Your Computer Science Marks");
+            let totalMarks = 500;
+            let obtianMarks = english + Urdu + Statistic + computerScience + Maths;
+            let percentage = obtianMarks / totalMarks * 100;
+            // output 
+            console.log("My Name is:", Name)
+            console.log("My Father Name is:", fatherName)
+            console.log("My Class  is:", classe)
+            console.log("Your  RollNo is :", Rollno)
+            console.log("English Marks is :", english)
+            console.log("Urdu Marks is :", Urdu)
+            console.log("Maths  Marks is :", Maths)
+            console.log("Statistic  Marks is :", Statistic)
+            console.log("Computer Science   Marks is :", computerScience)
+            console.log("Total   Marks is :", totalMarks)
+            console.log("Obtain    Marks is :", obtianMarks)
+            console.log("Percentage  is :", percentage + "%")
+            // Finding Grade Of all students .................
+            if (english <= 20 || Urdu <= 20 || Maths <= 20 || computerScience <= 20 || Statistic <= 20) {
+                console.log("sorry Your One Paper Has Been Failed Try For Next Time")
+            }
+            else {
+                if (percentage >= 90 && percentage <= 90) {
+                    console.log(" Congratulation ! You Got A+ Grade ")
+                }
+                else if (percentage >= 80 && percentage <= 90) {
+                    console.log(" Congratulation ! You Got A Grade ")
+                }
+                else if (percentage >= 70 && percentage <= 80) {
+                    console.log("  You Got B Grade")
+                }
+                else if (percentage >= 60 && percentage <= 70) {
+                    console.log("  You Got C Grade ")
+                }
+                else if (percentage >= 50 && percentage <= 60) {
+                    console.log("  You Got D Grade ")
+                }
+                else {
+                    console.log("  Your Fail Try For Next Times ")
+                }
+
+
+
+
+
+            }
+
+
+
+
+
+        }
+        GradeCalculator();
+
+
+    </script>
+</body>
+
+</html>
